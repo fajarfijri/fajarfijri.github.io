@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- AOS Animasi -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -44,7 +46,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/maou.jpg" alt="" width="200px" class="rounded-circle img-thumbnail" />
+      <img src="img/maou.jpg" alt="" width="200px" class="rounded-circle img-thumbnail " />
       <h1 class="display-4">Fajar</h1>
       <p class="lead">Creator | Fullstack</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -59,17 +61,17 @@
 
     <!-- about -->
     <section id="about">
-      <div class="container">
+      <div class="container"  >
         <div class="row text-center mb-4">
-          <div class="col">
+          <div class="col" data-aos="fade-down"  >
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+        <div class="row justify-content-center fs-5 text-center"  >
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" >
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aspernatur est illo laboriosam facere officia vero velit delectus, atque similique.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" >
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae asperiores nobis nostrum minus illo atque molestias iure sequi fuga eveniet, voluptate aut velit, pariatur, sapiente reiciendis molestiae ratione quos
               omnis!
@@ -90,13 +92,13 @@
     <section id="gallery">
       <div class="container">
         <div class="row text-center">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
             <h2>Gallery</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000">
               <img src="img/OIP (2).jfif" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Lukisan</p>
@@ -104,7 +106,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
               <img src="img/abstract-artistic-pattern-4k-l5-3840x2160.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Lukisan abstract</p>
@@ -112,7 +114,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="150" data-aos-delay="100">
               <img src="img/Desktop.jfif" class="card-img-top" alt="..." />
               <div class="card-body">
                 <p class="card-text">Lukisan musim semi</p>
@@ -171,7 +173,15 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   
+   <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+   <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzBwgkycek2fiMFZot18qKAFOHA2klXTV4wiCO-xzKab75u-kVej2djVzpNNQ_glFMc/exec'
       const form = document.forms['jar.web']
       const btnKirim = document.querySelector('.btn-kirim');
