@@ -1,7 +1,10 @@
 .jumbotron {
   padding-top: 2rem;
-  background-color: #e2edff;
+  background-color: #ede7dc;
 }
 #gallery {
-  background-color: #e2edff;
+  background-color: #ede7dc;
+}
+.sosmed li {
+  display: block;
 }
