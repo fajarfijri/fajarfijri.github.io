@@ -1,10 +1,19 @@
 .jumbotron {
   padding-top: 2rem;
-  background-color: #ede7dc;
+  background-color: black;
+  font-family: "Allison", cursive;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-family: "Indie Flower", cursive;
 }
 #gallery {
-  background-color: #ede7dc;
+  background-color: black;
 }
 .sosmed li {
   display: block;
+}
+.navbar {
+  font-family: "Allison", cursive;
+  font-family: "Dancing Script", cursive;
+  background-color: black;
 }
